@@ -1,0 +1,11 @@
+# PROJECT Routes
+# This file defines the Projects application routes (Higher priority routes first)
+# ~~~~
+
+# Any Play HTML file needs its own .
+GET        /                             pme123.adapters.example.server.boundary.ExampleController.index
+
+# Access resources from the Webjars
+->         /webjars                      webjars.Routes
+# Reuse the routes from the ADAPTERS project
+->         /                             adapters.Routes
